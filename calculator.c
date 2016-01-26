@@ -33,6 +33,9 @@ int main(void) {
 			result = x / y;
 			printf("the answer you seek is %d\n", result);
 		break;
+
+		default:
+			printf("I'm sorry I couldn't understand. :(\n Probably because the guy who built me is a noob. :(\n\n");
 	}
 
 
