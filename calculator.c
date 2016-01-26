@@ -15,12 +15,23 @@ int main(void) {
 
 	switch (o) {
 		case '+':
-		result = x + y;
-		printf("the answer you seek is %d\n", result);
+			result = x + y;
+			printf("the answer you seek is %d\n", result);
 		break;
+
 		case '-':
-		result = x - y;
-		printf("the answer you seek is %d\n", result);
+			result = x - y;
+			printf("the answer you seek is %d\n", result);
+		break;
+
+		case '*':
+			result = x * y;
+			printf("the answer you seek is %d\n", result);
+		break;
+
+		case '/':
+			result = x / y;
+			printf("the answer you seek is %d\n", result);
 		break;
 	}
 
