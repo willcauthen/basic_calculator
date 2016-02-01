@@ -2,7 +2,8 @@
 
 int main(void) {
 	// program starts with two integers and one operation. an answer variable is declared for later
-	int x, y, result;
+	int x, y;
+	int i = 2, result = 1;
 	char o;
 
 	// Prompt asks for input
@@ -16,27 +17,29 @@ int main(void) {
 	switch (o) {
 		case '+':
 			result = x + y;
-			printf("the answer you seek is %d\n", result);
 		break;
 
 		case '-':
 			result = x - y;
-			printf("the answer you seek is %d\n", result);
 		break;
 
 		case '*':
 			result = x * y;
-			printf("the answer you seek is %d\n", result);
 		break;
 
 		case '/':
 			result = x / y;
-			printf("the answer you seek is %d\n", result);
+		break;
+		
+		case '!':
+			while (i <= x ) {
+				result = result * i;
+				i++;
+			}
 		break;
 
 		default:
 			printf("I'm sorry I couldn't understand. :(\n Probably because the guy who built me is a noob. :(\n\n");
 	}
-
-
+	printf("the answer you seek is %d\n", result);
 }
